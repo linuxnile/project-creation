@@ -25,14 +25,14 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, email, password, address, mobileNo, schoolName } =
-      formData;
+    const { name, email, password, std, address, mobileNo, schoolName } = formData;
 
     try {
-      const { formData } = await axios.post("/register", {
+      await axios.post("/register", {
         name,
         email,
         password,
+        std,
         address,
         mobileNo,
         schoolName,
