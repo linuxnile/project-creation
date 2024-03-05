@@ -129,7 +129,7 @@ const Register = () => {
 
         <div className="form-part">
           <label>
-            Mobile No:
+            Mobile Number:
             <input
               type="tel"
               name="mobileNo"
@@ -185,8 +185,8 @@ const Register = () => {
             />
           </label>
         </div>
+        <button type="submit">Register</button>
       </form>
-      <button type="submit">Register</button>
     </div>
   );
 };

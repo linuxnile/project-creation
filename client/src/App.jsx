@@ -4,6 +4,7 @@ import Home from "./screens/Home";
 import Register from "./screens/Register";
 import Login from "./screens/Login";
 import axios from "axios";
+import Navbar from "./components/Navbar";
 
 axios.defaults.baseURL = "http://localhost:5000";
 axios.defaults.withCredentials = true;
@@ -11,6 +12,7 @@ axios.defaults.withCredentials = true;
 const App = () => {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
