@@ -48,7 +48,7 @@ const Login = () => {
         </label>
         <br />
         <div>
-          <a href="/forgot-password">Forgot Password?</a>
+          <Link to="/frgtpwd">Forgot Password?</Link>
         </div>
         <br />
         <button type="submit">Log In</button>
