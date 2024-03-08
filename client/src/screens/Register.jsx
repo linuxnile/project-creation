@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Register.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -151,7 +151,7 @@ const Register = () => {
           </label>
           <br />
 
-          <h3>Forgot Password Questions</h3>
+          <h4>Security Questions</h4>
           <label>
             What is your favourite colour?
             <input
@@ -186,6 +186,9 @@ const Register = () => {
           </label>
         </div>
         <button type="submit">Register</button>
+        <div>
+        Have an account? <Link to="/login">Log in</Link>
+        </div>
       </form>
     </div>
   );

@@ -5,10 +5,6 @@ const Home = () => {
   return (
     <>
       <h1>Math Quiz for Kids</h1>
-      <div style={{ fontSize: "30px" }}>
-        <Link to="/login">Login</Link> <br />
-        <Link to="/register">Register</Link>
-      </div>
     </>
   );
 };
