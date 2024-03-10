@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./Register.css";
 import { useNavigate, Link } from "react-router-dom";
+import { registerUser } from "../apicalls/users";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ const Register = () => {
     } = formData;
 
     try {
-      await axios.post("/register", {
+      const response = await registerUser({
         name,
         email,
         password,
@@ -187,7 +187,7 @@ const Register = () => {
         </div>
         <button type="submit">Register</button>
         <div>
-        Have an account? <Link to="/login">Log in</Link>
+          Have an account? <Link to="/login">Log in</Link>
         </div>
       </form>
     </div>
